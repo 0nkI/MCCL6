@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MCCL6;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,8 +22,9 @@ namespace _9MCCL6
             string carBrand = Console.ReadLine();
             Console.Write("Car Model?: ");
             string carModel = Console.ReadLine();
-            Car car = new Car(carBrand,carModel);
+            Car car = new Car(carBrand, carModel);
             dbCar.AddItem(car);
         }
     }
 }
+
