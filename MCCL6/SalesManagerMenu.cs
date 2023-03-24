@@ -33,7 +33,7 @@ namespace _9MCCL6
                         break;
 
                     case 2:
-                        Console.WriteLine("Find Car");
+                        salesManager.GetCar();
                         Console.ReadKey();
                         break;
                     case 3: 
