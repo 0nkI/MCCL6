@@ -36,8 +36,8 @@ namespace _9MCCL6
                         Console.WriteLine("Find Car");
                         Console.ReadKey();
                         break;
-                    case 3: 
-                        Console.WriteLine("Delete Car");
+                    case 3:
+                        salesManager.DeleteCar();
                         Console.ReadKey();
                         break;
                     case 4:
