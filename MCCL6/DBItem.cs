@@ -22,7 +22,7 @@ namespace _9MCCL6
             item.Id = counter++;
             Items.Add(item);
         }
-
+       
         public T FindById(int id)
         {
             T result = default(T);
@@ -35,6 +35,10 @@ namespace _9MCCL6
                 }
             }
             return result;
+         }
+        public bool DeleteByItem(T item) 
+        { 
+            return Items.Remove(item); 
         }
     }
 }
