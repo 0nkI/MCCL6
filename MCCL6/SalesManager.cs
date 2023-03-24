@@ -26,6 +26,21 @@ namespace _9MCCL6
             dbCar.AddItem(car);
         }
 
+        public void GetCar()
+        {
+            Console.Write("Get car ID?: ");
+            int id = int.Parse(Console.ReadLine());
+
+            Car result = dbCar.FindById(id);
+            if(result == default(Car))
+            {
+                Console.WriteLine("Not found");
+            }
+            else
+            {
+                Console.WriteLine(result);
+            }
+        }
         public void DeleteCar()
         {
             Console.Write("Delete Car ID?: ");
