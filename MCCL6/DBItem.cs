@@ -22,5 +22,19 @@ namespace _9MCCL6
             item.Id = counter++;
             Items.Add(item);
         }
+
+        public T FindById(int id)
+        {
+            T result = default(T);
+            foreach (var item in Items)
+            {
+                if(item.Id == id)
+                {
+                    result = item;
+                    break;
+                }
+            }
+            return result;
+        }
     }
 }
