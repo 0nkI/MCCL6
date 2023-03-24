@@ -25,6 +25,21 @@ namespace _9MCCL6
             Car car = new Car(carBrand, carModel);
             dbCar.AddItem(car);
         }
+
+        public void DeleteCar()
+        {
+            Console.Write("Delete Car ID?: ");
+            int id = int.Parse(Console.ReadLine());
+            Car result = dbCar.FindById(id);
+            if (dbCar.DeleteByItem(result))
+            {
+                Console.WriteLine("Deleted");
+            }
+            else
+            {
+                Console.WriteLine("Not Deleted");
+            }
+        }
     }
 }
 

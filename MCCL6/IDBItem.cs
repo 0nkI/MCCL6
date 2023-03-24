@@ -7,5 +7,7 @@ namespace _9MCCL6
         List<T> Items { get; set; }
 
         void AddItem(T item);
+
+        bool DeleteByItem(T item);
     }
 }
