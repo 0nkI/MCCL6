@@ -22,5 +22,10 @@ namespace _9MCCL6
             item.Id = counter++;
             Items.Add(item);
         }
+
+        public bool DeleteByItem(T item) 
+        { 
+            return Items.Remove(item); 
+        }
     }
 }
